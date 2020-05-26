@@ -6,6 +6,7 @@ class CreatePlayers < ActiveRecord::Migration[6.0]
       t.integer :age
       t.string :img
       t.string :position
+      t.boolean :liked , default: false
       t.integer :team_id
 
       t.timestamps

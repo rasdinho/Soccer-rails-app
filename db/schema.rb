@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_05_21_172022) do
     t.integer "age"
     t.string "img"
     t.string "position"
+    t.boolean "liked", default: false
     t.integer "team_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

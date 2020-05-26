@@ -20,6 +20,10 @@ class PlayersController < ApplicationController
         render json: player
       end
 
+      def destroy 
+        player = Player.find(params[:id])
+        player.destroy
+      end
      
       # private
       # def player_params
