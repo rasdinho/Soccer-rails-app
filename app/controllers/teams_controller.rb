@@ -9,5 +9,15 @@ class TeamsController < ApplicationController
         render json: team
       end
 
-   
+
+      def create 
+        team = Team.create(name: params[:name], logo_img: params[:logo_img])
+
+        render json: team
+      end
+
+      def destroy
+        team = Team.find(params[:id])
+        team.destroy
+      end
 end
