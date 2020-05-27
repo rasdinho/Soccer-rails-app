@@ -35,10 +35,10 @@ t6 = Team.create(name: "Juventus F.C.", logo_img:"https://seeklogo.com/images/J/
 
 
 # 1111111============= FC Barcelona players======================================
-p1 = Player.create(name: "Ter Stegen", jersey_num: 1, age: 28, img: "https://realsport101.com/wp-content/uploads/2019/11/ter-Stegen-1-198x300.png", position: "GK", team_id: t1.id)
+p1 = Player.create(name: "Ter Stegen", jersey_num: 1, age: 28, img: "https://realsport101.com/wp-content/uploads/2019/11/ter-Stegen-1-198x300.png", position: "GK", liked: true , team_id: t1.id)
 
-p2 = Player.create(name: "Sergi Roberto", jersey_num: 20, age: 28, img: "https://www.101greatgoals.com/wp-content/uploads/2018/03/11_Sergi-Roberto.png", position: "DF", team_id: t1.id)
-p3 = Player.create(name: "Gerard Pique", jersey_num: 3, age: 33, img: "https://realsport101.com/wp-content/uploads/2019/10/Pique-198x300.png", position: "DF", team_id: t1.id)
+p2 = Player.create(name: "Sergi Roberto", jersey_num: 20, age: 28, img: "https://www.101greatgoals.com/wp-content/uploads/2018/03/11_Sergi-Roberto.png", position: "DF", liked: true , team_id: t1.id)
+p3 = Player.create(name: "Gerard Pique", jersey_num: 3, age: 33, img: "https://realsport101.com/wp-content/uploads/2019/10/Pique-198x300.png", position: "DF", liked: true , team_id: t1.id)
 p4 = Player.create(name: "Clement Lenglet", jersey_num: 15, age: 24, img: "https://fifadataba.com/images/cards/689.png", position: "DF", team_id: t1.id)
 p5 = Player.create(name: "Jordi Alba", jersey_num: 18, age: 31, img: "https://fifadataba.com/images/cards/235.png", position: "DF", team_id: t1.id)
 
@@ -116,7 +116,7 @@ p55 = Player.create(name: "Thomas Muller", jersey_num: 25, age: 30, img: "https:
 
 
 # # ====================================================================== Juventus F.C. players======================================
-p56 = Player.create(name: "Wojciech Szczesny", jersey_num: 1, age: 30, img: "https://realsport101.com/wp-content/uploads/2019/07/szczesny-custom.png", position: "GK", team_id: t6.id)
+p56 = Player.create(name: "Wojciech Szczesny", jersey_num: 1, age: 30, img: "https://realsport101.com/wp-content/uploads/2019/07/szczesny-custom.png", position: "GK",team_id: t6.id)
 
 p57 = Player.create(name: "Alex Sandro", jersey_num: 12, age: 29, img: "https://realsport101.com/wp-content/uploads/2019/10/sandro-custom.png", position: "DF", team_id: t6.id)
 p58 = Player.create(name: "Matthijs DE Ligt", jersey_num: 4, age: 20, img: "https://realsport101.com/wp-content/uploads/2019/09/de-ligt-custom.png", position: "DF", team_id: t6.id)

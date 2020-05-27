@@ -25,6 +25,17 @@ class PlayersController < ApplicationController
         player.destroy
       end
      
+      def update
+        #we need to update th elike boolean for the player giving params id (i have the param id i wanna find the player once u do this )
+        player = Player.find(params[:id])
+        # render json: player
+        if player.valid?
+          player.update!(liked: params["liked"]) #you dont wanna change the id u only wanna change they value liked
+          
+          render json: player
+        end
+        
+      end
       # private
       # def player_params
       #   params.require(:player).permit(:name, :jersey_num, :age, :img, :position, :team_id)
